@@ -1,6 +1,7 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-name: CI/CD for techanv consulting website
+
+name: Node.js CI/CD
 
 on:
   push:
@@ -9,27 +10,78 @@ on:
     branches: ["main"]
 
 jobs:
+
   build:
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [20.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        node-version: [14.x, 16.x, 18.x]
 
     steps:
     - uses: actions/checkout@v3
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
 
-    - run: npm ci
-    - run: npm run build
-    - run: npm run lint
+    - name: Check for lock file
+      id: check_lock
+      run: |
+        if [ -f "package-lock.json" ]; then
+          echo "::set-output name=lock_file::package-lock.json"
+        elif [ -f "npm-shrinkwrap.json" ]; then
+          echo "::set-output name=lock_file::npm-shrinkwrap.json"
+        elif [ -f "yarn.lock" ]; then
+          echo "::set-output name=lock_file::yarn.lock"
+        else
+          echo "::error::No lock file found. Supported file patterns: package-lock.json, npm-shrinkwrap.json, yarn.lock"
+          exit 1
+        fi
 
-    - name: Run tests
+    - name: Install dependencies
+      run: npm ci
+      if: steps.check_lock.outputs.lock_file
+
+    - name: Install dependencies (fallback)
+      run: npm install
+      if: !steps.check_lock.outputs.lock_file
+
+    - name: Build
+      run: npm run build
+
+    - name: Lint
+      run: npm run lint
+
+    - name: Test
       run: npm test
       env:
         CI: true
+
+    - name: Deploy
+      if: github.ref == 'refs/heads/main'
+      run: |
+        # Deploy steps go here
+        # e.g., npm run deploy
+
+  notify:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Notify on failure
+      if: ${{ failure() }}
+      uses: 8398a7/action-slack@v3
+      with:
+        status: ${{ job.status }}
+        fields: repo,message,commit,author,action,eventName,ref,workflow
+        author_name: Failure in Node.js CI/CD
+        mention: here
+        if_mention: failure,cancelled
+        job_name: Notifying Slack on failure
+        username: GitHub Actions Bot
+        icon_emoji: ':github:'
+        channel: devops-alerts
+        slack_webhook_url: ${{ secrets.SLACK_WEBHOOK }}
