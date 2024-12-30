@@ -24,7 +24,7 @@ const Hero = () => {
          <h1 className="h1 mb-6">
            Power Your Website with&nbsp;AI&nbsp;by {` `}
            <span className="inline-block relative">
-             TechAnv{" "}
+             TechAnv !{" "}
              <img
                src={curve}
                className="absolute top-full left-0 w-full xl:-mt-2"
