@@ -2,10 +2,15 @@
 
 > Category: AI Platform / Developer Tools
 > Surface: web
-> Base lineage: Supabase (dark-emerald, code-first, open-source DNA)
+> Brand accent: #18a3d2 (cyan) — extracted from the Warden logomark
+> Palette source: techanv.com (config/variables.js)
 > Live target: ai.techanv.com
 
 Brand pillars: **Open Source · AI-First · Security · Transparent**.
+
+> Note: accent is the real Techanv cyan `#18a3d2` for parent-brand alignment;
+> neutrals follow techanv.com (black `#080808`, off-white `#fafafa`, zinc `#27272a`).
+> Read this doc with cyan as the single brand chroma wherever "emerald" appears below.
 
 ---
 
@@ -35,36 +40,36 @@ borders, translucent surfaces, and visible structure rather than heavy shadows.
 ## 2. Color
 
 ### Brand
-- **Emerald** `#3ECF8E` — primary brand, CTAs, active/working state, focus ring.
-- **Green Link** `#2BD480` / `#00C573` — interactive links, hovers.
-- **Emerald Border** `rgba(62,207,142,0.30)` — accent borders, selected outlines.
-- **Emerald Glow** `rgba(62,207,142,0.12)` — subtle fill behind badges/active cards.
+- **Cyan** `#18A3D2` — primary brand, CTAs, active/working state, focus ring.
+- **Cyan Link** `#22D3EE` / **Sky** `#38BDF8` — interactive links, hovers, lighter accent.
+- **Cyan Border** `rgba(24,163,210,0.30)` — accent borders, selected outlines.
+- **Cyan Glow** `rgba(24,163,210,0.12)` — subtle fill behind badges/active cards.
 
 ### Background surfaces (dark)
-- **Canvas** `#0D0F0E` — page background (near-black, faint green undertone).
-- **Surface** `#151917` — cards, panels.
-- **Surface Elevated** `#1B211E` — dropdowns, modals, hover surfaces.
-- **Surface Translucent** `rgba(27,33,30,0.84)` — sticky header / overlays.
+- **Canvas** `#080808` — page background (brand near-black).
+- **Surface** `#111113` — cards, panels.
+- **Surface Elevated** `#1A1A1D` — dropdowns, modals, hover surfaces.
+- **Surface Translucent** `rgba(8,8,8,0.84)` — sticky header / overlays.
 
 ### Borders
-- **Border** `#232927` — default card/section border.
-- **Border Strong** `#2F3733` — buttons, dividers, inputs.
+- **Border** `#27272A` — default card/section border (brand zinc).
+- **Border Strong** `#3F3F46` — buttons, dividers, inputs.
 - **Border Subtle** `rgba(255,255,255,0.06)` — hairline structure.
 
 ### Text
-- **Primary** `#F2F5F4` — headings, key copy (off-white, never pure white).
-- **Secondary** `#B7C0BC` — body, descriptions.
-- **Muted** `#7C8884` — captions, metadata, mono labels.
-- **Quaternary** `#4E5853` — disabled, timestamps.
+- **Primary** `#FAFAFA` — headings, key copy (brand off-white).
+- **Secondary** `#D4D4D8` — body, descriptions.
+- **Muted** `#A1A1AA` — captions, metadata, mono labels.
+- **Quaternary** `#71717A` — disabled, timestamps.
 
 ### Semantic states
-- **Success** `#3ECF8E` (emerald, doubles as brand).
-- **Info** `#4FD1C5` — teal, secondary AI/data accent.
+- **Info** `#18A3D2` (cyan, doubles as brand).
+- **Success** `#22C55E` — green.
 - **Warning** `#F5A623` — amber.
 - **Danger** `#FF6B6B` — coral red.
 
-> Rule: emerald is the *only* chromatic brand color in normal use. Teal/amber/coral
-> appear **only** in status, data-viz, and alert contexts.
+> Rule: cyan `#18a3d2` is the *only* chromatic brand color in normal use.
+> Green/amber/coral appear **only** in status, data-viz, and alert contexts.
 
 ## 3. Typography
 

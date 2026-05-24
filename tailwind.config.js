@@ -7,33 +7,33 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Techanv AI — emerald brand family (see design/DESIGN.md)
+        // Techanv brand — cyan accent from the Warden logomark (#18a3d2)
         color: {
-          1: "#3ECF8E", // emerald — primary brand / active / secure signal
-          2: "#4FD1C5", // info teal
+          1: "#18A3D2", // brand cyan — primary accent / active signal
+          2: "#38BDF8", // sky — lighter accent
           3: "#FF6B6B", // danger coral
-          4: "#2BD480", // green link
-          5: "#34D399", // emerald variant
-          6: "#00C573", // deep green
+          4: "#22D3EE", // cyan link
+          5: "#0EA5E9", // sky-500
+          6: "#18A3D2", // brand cyan
         },
         stroke: {
-          1: "#232927",
+          1: "#27272A",
         },
-        // Dark, near-black with faint green-cool undertone
+        // Near-black + zinc neutrals (brand: #080808 / #27272a / #fafafa)
         n: {
-          1: "#F2F5F4", // primary text (off-white)
-          2: "#B7C0BC", // secondary text
-          3: "#7C8884", // muted text
-          4: "#6B7670", // quaternary text
-          5: "#2F3733", // border-strong
-          6: "#232927", // border
-          7: "#151917", // surface
-          8: "#0D0F0E", // canvas / page bg
-          9: "#1B211E", // elevated surface
-          10: "#1B211E", // elevated (hero bar)
-          11: "#121615", // deep panel
-          12: "#1F2623", // panel alt
-          13: "#6C7275",
+          1: "#FAFAFA", // primary text (off-white)
+          2: "#D4D4D8", // secondary text (zinc-300)
+          3: "#A1A1AA", // muted text (zinc-400)
+          4: "#71717A", // quaternary text (zinc-500)
+          5: "#3F3F46", // border-strong (zinc-700)
+          6: "#27272A", // border (zinc-800 / brand grey)
+          7: "#111113", // surface
+          8: "#080808", // canvas / page bg (brand black)
+          9: "#1A1A1D", // elevated surface
+          10: "#1A1A1D", // elevated (hero bar)
+          11: "#18181B", // deep panel (zinc-900)
+          12: "#27272A", // panel alt
+          13: "#71717A",
         },
       },
       fontFamily: {
@@ -71,7 +71,7 @@ export default {
       backgroundImage: {
         "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",
         "conic-gradient":
-          "conic-gradient(from 225deg, #3ECF8E, #2BD480, #4FD1C5, #00C573, #3ECF8E)",
+          "conic-gradient(from 225deg, #18A3D2, #22D3EE, #38BDF8, #0EA5E9, #18A3D2)",
       },
     },
   },

@@ -1,35 +1,37 @@
-/* Techanv AI — design tokens (canonical). Base: Supabase dark-emerald.
-   Brand: Open Source · AI-First · Security · Transparent. Live: ai.techanv.com */
+/* Techanv AI — design tokens (canonical).
+   Brand accent #18a3d2 (cyan) extracted from the Warden logomark.
+   Palette aligned to techanv.com (config/variables.js): black #080808,
+   off-white #fafafa, zinc #27272a. Live: ai.techanv.com */
 :root {
   color-scheme: dark;
 
   /* Brand */
-  --techanv-emerald: #3ECF8E;
-  --techanv-green-link: #2BD480;
-  --techanv-green-deep: #00C573;
-  --techanv-emerald-border: rgba(62, 207, 142, 0.30);
-  --techanv-emerald-glow: rgba(62, 207, 142, 0.12);
+  --techanv-cyan: #18A3D2;
+  --techanv-cyan-link: #22D3EE;
+  --techanv-sky: #38BDF8;
+  --techanv-cyan-border: rgba(24, 163, 210, 0.30);
+  --techanv-cyan-glow: rgba(24, 163, 210, 0.12);
 
   /* Surfaces */
-  --techanv-canvas: #0D0F0E;
-  --techanv-surface: #151917;
-  --techanv-surface-elevated: #1B211E;
-  --techanv-surface-translucent: rgba(27, 33, 30, 0.84);
+  --techanv-canvas: #080808;
+  --techanv-surface: #111113;
+  --techanv-surface-elevated: #1A1A1D;
+  --techanv-surface-translucent: rgba(8, 8, 8, 0.84);
 
   /* Borders */
-  --techanv-border: #232927;
-  --techanv-border-strong: #2F3733;
+  --techanv-border: #27272A;
+  --techanv-border-strong: #3F3F46;
   --techanv-border-subtle: rgba(255, 255, 255, 0.06);
 
   /* Text */
-  --techanv-text: #F2F5F4;
-  --techanv-text-secondary: #B7C0BC;
-  --techanv-text-muted: #7C8884;
-  --techanv-text-quaternary: #4E5853;
+  --techanv-text: #FAFAFA;
+  --techanv-text-secondary: #D4D4D8;
+  --techanv-text-muted: #A1A1AA;
+  --techanv-text-quaternary: #71717A;
 
   /* Semantic */
-  --techanv-success: #3ECF8E;
-  --techanv-info: #4FD1C5;
+  --techanv-success: #22C55E;
+  --techanv-info: #18A3D2;
   --techanv-warning: #F5A623;
   --techanv-danger: #FF6B6B;
 
@@ -56,7 +58,7 @@
   --techanv-space-32: 128px;
 
   /* Focus */
-  --techanv-focus-ring: rgba(62, 207, 142, 0.40);
+  --techanv-focus-ring: rgba(24, 163, 210, 0.40);
 
   /* Generic aliases */
   --color-background: var(--techanv-canvas);
@@ -65,5 +67,5 @@
   --color-text: var(--techanv-text);
   --color-text-secondary: var(--techanv-text-secondary);
   --color-border: var(--techanv-border);
-  --color-primary: var(--techanv-emerald);
+  --color-primary: var(--techanv-cyan);
 }

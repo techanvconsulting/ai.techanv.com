@@ -1,6 +1,7 @@
 import check from "./check.svg";
 import techanvSymbol from "./techanv-symbol.svg";
 import techanvWhiteSymbol from "./techanv-symbol-white.svg";
+import logomarkAnimated from "./logomark-animated.webp";
 import play from "./play.svg";
 import gradient from "./gradient.png";
 import smallSphere from "./4-small.png";
@@ -80,6 +81,7 @@ export {
   loading1,
   techanvSymbol,
   techanvWhiteSymbol,
+  logomarkAnimated,
   play,
   gradient,
   smallSphere,

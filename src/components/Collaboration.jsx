@@ -1,4 +1,4 @@
-import { techanvSymbol, check } from "../assets";
+import { logomarkAnimated, check } from "../assets";
 import { collabApps } from "../constants";
 import Button from "./Button";
 import Section from "./Section";
@@ -52,7 +52,7 @@ const Collaboration = () => {
              <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                  <img
-                   src={techanvSymbol}
+                   src={logomarkAnimated}
                    width={48}
                    height={48}
                    alt="TechAnv"
