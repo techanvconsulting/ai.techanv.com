@@ -3,7 +3,7 @@ import techanvSymbol from "./techanv-symbol.svg";
 import techanvWhiteSymbol from "./techanv-symbol-white.svg";
 import logomarkAnimated from "./logomark-animated.webp";
 import play from "./play.svg";
-import gradient from "./gradient.png";
+import gradient from "./gradient.webp";
 import smallSphere from "./4-small.png";
 import grid from "./grid.png";
 import check2 from "./check-02.svg";
@@ -22,8 +22,11 @@ import loading from "./loading.png";
 import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
-import robot from "./hero/robot.jpg";
-import heroBackground from "./hero/hero-background.jpg";
+import heroVisual from "./hero/hero-visual.webp";
+import heroLoopWebm from "./hero/hero-loop.webm";
+import heroLoopMp4 from "./hero/hero-loop.mp4";
+import heroBackground from "./hero/hero-background.webp";
+import heroBackgroundMobile from "./hero/hero-background-mobile.webp";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
@@ -36,9 +39,9 @@ import protopie from "./collaboration/protopie.png";
 import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
 
-import service1 from "./services/service-1.png";
-import service2 from "./services/service-2.png";
-import service3 from "./services/service-3.png";
+import service1 from "./services/service-1.webp";
+import service2 from "./services/service-2.webp";
+import service3 from "./services/service-3.webp";
 
 import lines from "./pricing/lines.svg";
 import stars from "./pricing/stars.svg";
@@ -99,8 +102,11 @@ export {
   loading,
   background,
   curve,
-  robot,
+  heroVisual,
+  heroLoopWebm,
+  heroLoopMp4,
   heroBackground,
+  heroBackgroundMobile,
   curve1,
   curve2,
   discord,
