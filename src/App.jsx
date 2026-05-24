@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import Benefits from "./components/Benefits";
 import Capabilities from "./components/Capabilities";
@@ -10,6 +11,15 @@ import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
 
 const App = () => {
+  // Scroll to the hashed section once the SPA has mounted (deep links + 404 redirect).
+  useEffect(() => {
+    if (!window.location.hash) return;
+    const id = window.location.hash.slice(1);
+    requestAnimationFrame(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    });
+  }, []);
+
   return (
     <>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">

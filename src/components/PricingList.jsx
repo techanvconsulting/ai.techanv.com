@@ -1,8 +1,13 @@
+import { useState } from "react";
 import { check } from "../assets";
 import { pricing } from "../constants";
 import Button from "./Button";
+import Modal from "./Modal";
+import GetStartedContent from "./GetStartedContent";
 
 const PricingList = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="flex gap-[1rem] max-lg:flex-wrap">
       {pricing.map((item) => (
@@ -27,13 +32,18 @@ const PricingList = () => {
             )}
           </div>
 
-          <Button
-            className="w-full mb-6"
-            href={item.price ? "#pricing" : "https://techanv.com"}
-            white={!!item.price}
-          >
-            {item.price ? "Get started" : "Contact sales"}
-          </Button>
+          {item.price ? (
+            <Button className="w-full mb-6" white onClick={() => setOpen(true)}>
+              Get started
+            </Button>
+          ) : (
+            <Button
+              className="w-full mb-6"
+              href="https://techanv.com"
+            >
+              Contact sales
+            </Button>
+          )}
 
           <ul>
             {item.features.map((feature, index) => (
@@ -48,6 +58,15 @@ const PricingList = () => {
           </ul>
         </div>
       ))}
+
+      <Modal
+        open={open}
+        onClose={() => setOpen(false)}
+        eyebrow="Get started"
+        title="Start free with Techanv AI"
+      >
+        <GetStartedContent />
+      </Modal>
     </div>
   );
 };

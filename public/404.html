@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Techanv AI</title>
+  <script>
+    // SPA deep-link fallback for GitHub Pages: map a typed path
+    // (e.g. /pricing) to the matching on-page section and redirect home.
+    (function () {
+      var seg = location.pathname.replace(/^\/+|\/+$/g, "").toLowerCase();
+      var map = {
+        pricing: "#pricing",
+        roadmap: "#roadmap",
+        features: "#features",
+        capabilities: "#capabilities",
+        "how-it-works": "#how-to-use",
+        "how-to-use": "#how-to-use",
+        services: "#how-to-use",
+        demo: "#pricing",
+        signup: "#pricing"
+      };
+      var hash = map[seg] || "";
+      location.replace("/" + hash + location.search);
+    })();
+  </script>
+</head>
+<body></body>
+</html>

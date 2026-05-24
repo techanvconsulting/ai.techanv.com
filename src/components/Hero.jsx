@@ -10,13 +10,16 @@ import Section from "./Section";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
 import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Generating from "./Generating";
 import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
+import Modal from "./Modal";
+import GetStartedContent from "./GetStartedContent";
 
 const Hero = () => {
  const parallaxRef = useRef(null);
+ const [getStarted, setGetStarted] = useState(false);
  return (
    <Section
      className="pt-[12rem] -mt-[5.25rem]"
@@ -45,7 +48,7 @@ const Hero = () => {
            agents, content generation, and analytics to any site — self-hosted,
            security-first, and live in under 30&nbsp;minutes.
          </p>
-         <Button href="#pricing" white>
+         <Button white onClick={() => setGetStarted(true)}>
            Deploy your agent
          </Button>
        </div>
@@ -109,6 +112,15 @@ const Hero = () => {
        <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />
      </div>
      <BottomLine />
+
+     <Modal
+       open={getStarted}
+       onClose={() => setGetStarted(false)}
+       eyebrow="Get started"
+       title="Deploy your first agent"
+     >
+       <GetStartedContent />
+     </Modal>
    </Section>
  );
 };
