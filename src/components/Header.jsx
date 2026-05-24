@@ -34,7 +34,7 @@ const Header = () => {
         openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
       }`}
     >
-      <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
+      <div className="container flex items-center max-lg:py-4">
         <a
           className="flex items-center w-[12rem] xl:mr-8"
           href="#hero"
