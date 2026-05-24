@@ -1,0 +1,16 @@
+{
+  "name": "Techanv AI — Open-Source AI Platform for Websites",
+  "short_name": "Techanv AI",
+  "description": "Deploy AI agents, content generation, analytics, and personalization on any website. Open source, self-hostable, security-first.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#080808",
+  "lang": "en",
+  "categories": ["developer", "productivity", "business"],
+  "icons": [
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" },
+    { "src": "/favicon.ico", "sizes": "48x48 32x32 16x16", "type": "image/x-icon" }
+  ]
+}

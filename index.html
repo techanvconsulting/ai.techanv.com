@@ -3,57 +3,146 @@
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
-   <!-- Favicon -->
+   <meta name="theme-color" content="#080808" />
+   <meta name="color-scheme" content="dark" />
+   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+   <meta name="format-detection" content="telephone=no" />
+   <meta name="author" content="Techanv Consulting" />
+   <meta name="generator" content="Techanv AI" />
+
+   <!-- Favicon / PWA -->
    <link rel="icon" href="/favicon.ico" sizes="any" />
    <link rel="icon" type="image/svg+xml" href="./src/assets/techanv-symbol.svg" />
-   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-   <link rel="canonical" href="https://ai.techanv.com" />
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+   <link rel="manifest" href="/manifest.webmanifest" />
+   <link rel="canonical" href="https://ai.techanv.com/" />
+
+   <!-- Performance: warm up font origins -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
    <!-- Primary Meta Tags -->
-   <title>Techanv AI — Open-Source AI Platform for Your Website</title>
-   <meta name="title" content="Techanv AI — Open-Source AI Platform for Your Website">
-   <meta name="description" content="Open-source, self-hostable AI platform. Add conversational agents, content generation, analytics, and personalization to any website — security-first and live in under 30 minutes.">
-   <meta name="keywords" content="open source AI, self-hosted AI, AI agent, conversational AI, RAG, AI content generation, website automation, secure AI, Techanv">
+   <title>Techanv AI — Open-Source AI Platform for Websites</title>
+   <meta name="title" content="Techanv AI — Open-Source AI Platform for Websites" />
+   <meta name="description" content="The open-source, self-hostable AI platform for websites. Deploy AI agents, content generation, analytics, and personalization — security-first and live in under 30 minutes." />
+   <meta name="keywords" content="AI platform, open source AI, self-hosted AI, AI agent, conversational AI, RAG, vector search, AI content generation, website personalization, predictive analytics, secure AI, AI as a service, Techanv" />
+   <meta name="application-name" content="Techanv AI" />
+   <meta name="apple-mobile-web-app-title" content="Techanv AI" />
 
    <!-- Open Graph / Facebook -->
-   <meta property="og:type" content="website">
-   <meta property="og:url" content="https://ai.techanv.com">
-   <meta property="og:title" content="Techanv AI — Open-Source AI Platform for Your Website">
-   <meta property="og:description" content="Conversational agents, content generation, and analytics for any site. Open source, self-hostable, secured by Warden. Open. Secure. Transparent.">
-   <meta property="og:image" content="https://ai.techanv.com/og-image.webp">
+   <meta property="og:type" content="website" />
+   <meta property="og:site_name" content="Techanv AI" />
+   <meta property="og:locale" content="en_US" />
+   <meta property="og:url" content="https://ai.techanv.com/" />
+   <meta property="og:title" content="Techanv AI — Open-Source AI Platform for Websites" />
+   <meta property="og:description" content="Deploy AI agents, content generation, analytics, and personalization on any site. Open source, self-hostable, secured by Warden. Open. Secure. Transparent." />
+   <meta property="og:image" content="https://ai.techanv.com/og-image.webp" />
+   <meta property="og:image:type" content="image/webp" />
+   <meta property="og:image:width" content="1200" />
+   <meta property="og:image:height" content="630" />
+   <meta property="og:image:alt" content="Techanv AI — open-source AI platform for websites" />
 
    <!-- Twitter -->
-   <meta property="twitter:card" content="summary_large_image">
-   <meta property="twitter:url" content="https://ai.techanv.com">
-   <meta property="twitter:title" content="Techanv AI — Open-Source AI Platform for Your Website">
-   <meta property="twitter:description" content="Open-source, self-hostable AI for your website. Agents, content generation, analytics — security-first. Open. Secure. Transparent.">
-   <meta property="twitter:image" content="https://ai.techanv.com/twitter-image.webp">
+   <meta name="twitter:card" content="summary_large_image" />
+   <meta name="twitter:url" content="https://ai.techanv.com/" />
+   <meta name="twitter:title" content="Techanv AI — Open-Source AI Platform for Websites" />
+   <meta name="twitter:description" content="Open-source, self-hostable AI for your website. Agents, content generation, analytics — security-first. Open. Secure. Transparent." />
+   <meta name="twitter:image" content="https://ai.techanv.com/twitter-image.webp" />
+   <meta name="twitter:image:alt" content="Techanv AI — open-source AI platform for websites" />
 
    <!-- Structured Data -->
    <script type="application/ld+json">
    {
      "@context": "https://schema.org",
-     "@type": "SoftwareApplication",
-     "name": "Techanv AI",
-     "applicationCategory": "DeveloperApplication",
-     "operatingSystem": "Web",
-     "description": "Open-source, self-hostable AI platform for websites: conversational agents, content generation, analytics, and personalization. Security-first and transparent.",
-     "offers": {
-       "@type": "Offer",
-       "price": "0",
-       "priceCurrency": "USD"
-     },
-     "author": {
-       "@type": "Organization",
-       "name": "Techanv Consulting",
-       "url": "https://techanv.com"
-     }
+     "@graph": [
+       {
+         "@type": "Organization",
+         "@id": "https://techanv.com/#org",
+         "name": "Techanv Consulting",
+         "url": "https://techanv.com",
+         "logo": "https://ai.techanv.com/apple-touch-icon.png",
+         "sameAs": ["https://github.com/techanvconsulting", "https://blog.techanv.com"],
+         "contactPoint": {
+           "@type": "ContactPoint",
+           "telephone": "+91-9407601376",
+           "contactType": "sales",
+           "areaServed": "Worldwide",
+           "availableLanguage": ["en"]
+         }
+       },
+       {
+         "@type": "WebSite",
+         "@id": "https://ai.techanv.com/#website",
+         "url": "https://ai.techanv.com/",
+         "name": "Techanv AI",
+         "description": "Open-source, self-hostable AI platform for websites.",
+         "publisher": { "@id": "https://techanv.com/#org" },
+         "inLanguage": "en"
+       },
+       {
+         "@type": "SoftwareApplication",
+         "@id": "https://ai.techanv.com/#software",
+         "name": "Techanv AI",
+         "applicationCategory": "DeveloperApplication",
+         "applicationSubCategory": "AI Platform",
+         "operatingSystem": "Web, Self-hosted",
+         "url": "https://ai.techanv.com/",
+         "description": "Open-source, self-hostable AI platform for websites: conversational and voice agents, RAG, content generation, analytics, personalization, multi-channel deployment, and an API/SDK. Security-first and transparent.",
+         "image": "https://ai.techanv.com/og-image.webp",
+         "publisher": { "@id": "https://techanv.com/#org" },
+         "featureList": [
+           "Conversational AI agents",
+           "Voice agents",
+           "RAG & vector search",
+           "AI content generation",
+           "Personalization & smart traffic",
+           "Predictive analytics",
+           "Multi-channel deployment",
+           "API, SDK & embeddable widgets",
+           "Agentic task automation",
+           "Recommendation engine",
+           "Document AI & OCR",
+           "Sentiment & intent analysis",
+           "Multilingual translation",
+           "Image & vision AI",
+           "Workflow automation",
+           "Fraud & security AI"
+         ],
+         "offers": {
+           "@type": "AggregateOffer",
+           "priceCurrency": "USD",
+           "lowPrice": "0",
+           "highPrice": "29",
+           "offerCount": "3"
+         }
+       },
+       {
+         "@type": "Service",
+         "@id": "https://ai.techanv.com/#service",
+         "name": "Techanv AI Platform",
+         "serviceType": "AI platform for websites",
+         "provider": { "@id": "https://techanv.com/#org" },
+         "areaServed": "Worldwide",
+         "url": "https://ai.techanv.com/",
+         "description": "Add AI agents, content generation, analytics, and personalization to any website. Open source, self-hostable, security-first.",
+         "offers": {
+           "@type": "Offer",
+           "price": "0",
+           "priceCurrency": "USD",
+           "url": "https://ai.techanv.com/#pricing"
+         }
+       }
+     ]
    }
    </script>
 </head>
 <body>
    <div id="root"></div>
+   <noscript>
+     <h1>Techanv AI — Open-Source AI Platform for Websites</h1>
+     <p>Deploy AI agents, content generation, analytics, and personalization on any website. Open source, self-hostable, security-first. Open. Secure. Transparent.</p>
+     <p>This site needs JavaScript. Learn more at <a href="https://techanv.com">techanv.com</a> or on <a href="https://github.com/techanvconsulting">GitHub</a>.</p>
+   </noscript>
    <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
