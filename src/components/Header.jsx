@@ -1,7 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
-import { techanvSymbol } from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
@@ -37,12 +36,13 @@ const Header = () => {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a
-          className="flex items-center gap-3 w-[12rem] xl:mr-8"
+          className="flex items-center w-[12rem] xl:mr-8"
           href="#hero"
+          aria-label="techanv.ai"
         >
-          <img src={techanvSymbol} width={32} height={32} alt="Techanv AI" />
-          <span className="text-xl font-semibold tracking-tight text-n-1">
-            techanv<span className="text-color-1">.ai</span>
+          <span className="font-code text-xl font-bold tracking-tight text-n-1">
+            <span className="text-color-1">&gt;_</span> techanv
+            <span className="text-color-1">.ai</span>
           </span>
         </a>
 
