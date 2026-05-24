@@ -4,6 +4,12 @@ import {
   benefitIcon3,
   benefitIcon4,
   benefitImage2,
+  benefitCard1,
+  benefitCard2,
+  benefitCard3,
+  benefitCard4,
+  benefitCard5,
+  benefitCard6,
   chromecast,
   disc02,
   discord,
@@ -33,7 +39,6 @@ import {
   sliders04,
   telegram,
   twitter,
-  yourlogo,
 } from "../assets";
 
 export const navigation = [
@@ -43,9 +48,14 @@ export const navigation = [
     url: "#features",
   },
   {
-    id: "2",
-    title: "How to use",
+    id: "1",
+    title: "How it works",
     url: "#how-to-use",
+  },
+  {
+    id: "2",
+    title: "Pricing",
+    url: "#pricing",
   },
   {
     id: "3",
@@ -54,14 +64,14 @@ export const navigation = [
   },
   {
     id: "4",
-    title: "New account",
+    title: "Start free",
     url: "#signup",
     onlyMobile: true,
   },
   {
     id: "5",
-    title: "Sign in",
-    url: "#login",
+    title: "Docs",
+    url: "https://techanv.com",
     onlyMobile: true,
   },
 ];
@@ -70,15 +80,23 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
-
-export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
+// Trust signals replace placeholder partner logos.
+export const trustSignals = [
+  "Open Source",
+  "Self-Hostable",
+  "GDPR-Ready",
+  "SOC 2 Aligned",
+  "99.9% Uptime",
 ];
 
-export const brainwaveServicesIcons = [
+// Icon row in the Services "AI services" block.
+export const techanvServices = [
+  "Conversational AI agent",
+  "AI content generation",
+  "Multi-channel deploy",
+];
+
+export const techanvServicesIcons = [
   recording03,
   recording01,
   disc02,
@@ -89,55 +107,55 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "Website Integration",
-    text: "Easy integration SDK for adding AI features to existing websites with minimal code changes required.",
-    date: "Q1 2024",
-    status: "done", 
+    title: "Conversational AI Agent",
+    text: "Drop-in agent trained on your site. Paste a URL, auto-build the knowledge base, resolve 75–90% of visitor questions autonomously.",
+    date: "Live · Q4 2025",
+    status: "done",
     imageUrl: roadmap1,
     colorful: true,
   },
   {
     id: "1",
-    title: "Smart Analytics",
-    text: "Advanced AI analytics platform providing insights into user behavior and automated optimization recommendations.",
-    date: "Q2 2024",
+    title: "Multi-Channel + Voice",
+    text: "Deploy one agent across web, WhatsApp, Slack, Telegram and a real-time voice channel — consistent context everywhere.",
+    date: "Q1 2026",
     status: "progress",
     imageUrl: roadmap2,
   },
   {
-    id: "2", 
-    title: "Custom AI Features",
-    text: "Build and deploy custom AI features tailored to your specific website needs and requirements.",
-    date: "Q3 2024",
-    status: "done",
+    id: "2",
+    title: "RAG & Vector Search",
+    text: "Retrieval-augmented generation over your docs with hybrid semantic + keyword search, grounded on live data — no stale answers.",
+    date: "Q2 2026",
+    status: "progress",
     imageUrl: roadmap3,
   },
   {
     id: "3",
-    title: "API Platform",
-    text: "Full API access platform for advanced integrations and custom development of AI features.",
-    date: "Q4 2024", 
+    title: "Open API & Self-Host SDK",
+    text: "Full API platform and an SDK to embed, extend, and self-host every AI feature on your own infrastructure. Secured by Warden.",
+    date: "Q3 2026",
     status: "progress",
     imageUrl: roadmap4,
   },
- ];
+];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "Open-source, self-hostable, and secured by Warden — the AI platform for teams who refuse to trade control for capability.";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
+    title: "Open Source",
     text: collabText,
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Security-First",
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Transparent by Design",
   },
 ];
 
@@ -203,35 +221,35 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
+    title: "Starter",
+    description: "Conversational AI agent for one site, hosted by us",
     price: "0",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "AI agent trained on your website content",
+      "Up to 500 conversations / month",
+      "Web chat widget + basic analytics",
     ],
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
+    title: "Pro",
+    description: "Full AI suite — content, analytics, personalization",
+    price: "29",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
+      "Unlimited conversations across web + multi-channel",
+      "AI content generation, RAG search, and personalization",
+      "Predictive analytics dashboard + priority support",
     ],
   },
   {
     id: "2",
     title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
+    description: "Self-hosted, open-source, secured by Warden",
     price: null,
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Self-host on your own infrastructure (open source)",
+      "Warden security controls, SSO, and audit logging",
+      "Custom AI features, SLA, and a dedicated account team",
     ],
   },
 ];
@@ -239,85 +257,96 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "AI Integration",
-    text: "Seamlessly add intelligent features to your website with our simple integration process.",
-    backgroundUrl: "./src/assets/benefits/card-1.svg",
+    title: "Conversational AI Agent",
+    text: "An autonomous agent trained on your site that resolves 75–90% of visitor questions — paste a URL and the knowledge base builds itself.",
+    backgroundUrl: benefitCard1,
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
-    id: "1", 
-    title: "Smart Analytics",
-    text: "Get AI-powered insights into user behavior and automatically optimize your website performance.",
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    id: "1",
+    title: "Secure & Open Source",
+    text: "Self-hostable and open by default, hardened with Warden and OpenArmor. Your data, your infrastructure, full transparency.",
+    backgroundUrl: benefitCard2,
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
     light: true,
   },
   {
     id: "2",
-    title: "Automated Support",
-    text: "24/7 AI customer support with natural language understanding and automated responses.",
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    title: "AI Content Generation",
+    text: "Generate and localize copy, SEO metadata, and product descriptions in 100+ languages — on-brand, on demand.",
+    backgroundUrl: benefitCard3,
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Enhanced UX",
-    text: "Improve user experience with personalized content and intelligent interactions.",
-    backgroundUrl: "./src/assets/benefits/card-4.svg",
+    title: "Predictive Analytics",
+    text: "AI-powered insight into visitor behavior with predictive scoring and automated optimization recommendations.",
+    backgroundUrl: benefitCard4,
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
     light: true,
   },
   {
     id: "4",
-    title: "Custom Features",
-    text: "Build custom AI features tailored to your specific website needs and requirements.",
-    backgroundUrl: "./src/assets/benefits/card-5.svg",
+    title: "Smart Personalization",
+    text: "Smart Traffic routes every visitor to the variant most likely to convert — up to a 30% lift from per-visitor content.",
+    backgroundUrl: benefitCard5,
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Continuous Learning",
-    text: "AI system that learns and improves from user interactions to provide better service.",
-    backgroundUrl: "./src/assets/benefits/card-6.svg",
+    title: "Deploy in Minutes",
+    text: "Describe what you want in plain language and ship a working AI feature in under 30 minutes — no-code or via the open SDK.",
+    backgroundUrl: benefitCard6,
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
   },
 ];
 
+// Verified Techanv destinations (handles unconfirmed → point to company sites).
 export const socials = [
   {
     id: "0",
     title: "Discord",
     iconUrl: discordBlack,
-    url: "#",
+    url: "https://techanv.com",
   },
   {
     id: "1",
     title: "Twitter",
     iconUrl: twitter,
-    url: "#",
+    url: "https://techanv.com",
   },
   {
     id: "2",
     title: "Instagram",
     iconUrl: instagram,
-    url: "#",
+    url: "https://techanv.com",
   },
   {
     id: "3",
     title: "Telegram",
     iconUrl: telegram,
-    url: "#",
+    url: "https://techanv.com",
   },
   {
     id: "4",
     title: "Facebook",
     iconUrl: facebook,
-    url: "#",
+    url: "https://techanv.com",
   },
 ];
+
+// Company / contact info (verified from techanv.com).
+export const company = {
+  name: "Techanv Consulting",
+  email: "[email protected]",
+  phone: "+91 9407601376",
+  github: "https://github.com/techanvconsulting",
+  blog: "https://blog.techanv.com",
+  site: "https://techanv.com",
+};

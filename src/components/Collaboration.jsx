@@ -1,5 +1,5 @@
-import { brainwaveSymbol, check } from "../assets";
-import { collabApps, collabContent } from "../constants";
+import { techanvSymbol, check } from "../assets";
+import { collabApps } from "../constants";
 import Button from "./Button";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
@@ -10,24 +10,24 @@ const Collaboration = () => {
      <div className="container lg:flex">
        <div className="max-w-[25rem]">
          <h2 className="h2 mb-4 md:mb-8">
-           AI-Powered Web Integration Platform
+           Open source. Self-hosted. Secured by Warden.
          </h2>
          <ul className="max-w-[22rem] mb-10 md:mb-14">
            {[
              {
                id: 1,
-               title: "Smart Website Optimization",
-               text: "Automatically optimize your website performance and user experience"
+               title: "Your data, your infrastructure",
+               text: "Self-host the entire platform — no vendor lock-in, no data leaving your stack."
              },
              {
-               id: 2, 
-               title: "Intelligent Content Management",
-               text: "AI-driven content organization and personalization"
+               id: 2,
+               title: "Security-first by design",
+               text: "Hardened with Warden and OpenArmor: SSO, audit logging, and least-privilege access."
              },
              {
                id: 3,
-               title: "Automated Customer Support",
-               text: "24/7 AI chatbot support for your visitors"
+               title: "Transparent and auditable",
+               text: "Open codebase you can read, fork, and verify — trust through transparency, not promises."
              }
            ].map((item) => (
              <li className="mb-3 py-3" key={item.id}>
@@ -41,18 +41,18 @@ const Collaboration = () => {
              </li>
            ))}
          </ul>
-         <Button>Start Integration</Button>
+         <Button href="https://github.com/techanvconsulting">View on GitHub</Button>
        </div>
        <div className="lg:ml-auto xl:w-[38rem] mt-4">
          <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
-           Transform your website with cutting-edge AI technology. Easy integration, powerful features.
+           One platform, every integration. Connect your stack and deploy AI across web, chat, and voice.
          </p>
          <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
            <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
              <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                  <img
-                   src={brainwaveSymbol}
+                   src={techanvSymbol}
                    width={48}
                    height={48}
                    alt="TechAnv"

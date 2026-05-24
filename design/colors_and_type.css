@@ -1,0 +1,69 @@
+/* Techanv AI — design tokens (canonical). Base: Supabase dark-emerald.
+   Brand: Open Source · AI-First · Security · Transparent. Live: ai.techanv.com */
+:root {
+  color-scheme: dark;
+
+  /* Brand */
+  --techanv-emerald: #3ECF8E;
+  --techanv-green-link: #2BD480;
+  --techanv-green-deep: #00C573;
+  --techanv-emerald-border: rgba(62, 207, 142, 0.30);
+  --techanv-emerald-glow: rgba(62, 207, 142, 0.12);
+
+  /* Surfaces */
+  --techanv-canvas: #0D0F0E;
+  --techanv-surface: #151917;
+  --techanv-surface-elevated: #1B211E;
+  --techanv-surface-translucent: rgba(27, 33, 30, 0.84);
+
+  /* Borders */
+  --techanv-border: #232927;
+  --techanv-border-strong: #2F3733;
+  --techanv-border-subtle: rgba(255, 255, 255, 0.06);
+
+  /* Text */
+  --techanv-text: #F2F5F4;
+  --techanv-text-secondary: #B7C0BC;
+  --techanv-text-muted: #7C8884;
+  --techanv-text-quaternary: #4E5853;
+
+  /* Semantic */
+  --techanv-success: #3ECF8E;
+  --techanv-info: #4FD1C5;
+  --techanv-warning: #F5A623;
+  --techanv-danger: #FF6B6B;
+
+  /* Type */
+  --techanv-font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --techanv-font-mono: "JetBrains Mono", "Source Code Pro", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Radius */
+  --techanv-radius-pill: 9999px;
+  --techanv-radius-sm: 6px;
+  --techanv-radius-md: 8px;
+  --techanv-radius-lg: 12px;
+
+  /* Spacing (4px base) */
+  --techanv-space-1: 4px;
+  --techanv-space-2: 8px;
+  --techanv-space-3: 12px;
+  --techanv-space-4: 16px;
+  --techanv-space-6: 24px;
+  --techanv-space-8: 32px;
+  --techanv-space-12: 48px;
+  --techanv-space-16: 64px;
+  --techanv-space-24: 96px;
+  --techanv-space-32: 128px;
+
+  /* Focus */
+  --techanv-focus-ring: rgba(62, 207, 142, 0.40);
+
+  /* Generic aliases */
+  --color-background: var(--techanv-canvas);
+  --color-surface: var(--techanv-surface);
+  --color-surface-elevated: var(--techanv-surface-elevated);
+  --color-text: var(--techanv-text);
+  --color-text-secondary: var(--techanv-text-secondary);
+  --color-border: var(--techanv-border);
+  --color-primary: var(--techanv-emerald);
+}

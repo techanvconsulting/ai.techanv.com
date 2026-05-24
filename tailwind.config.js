@@ -7,35 +7,37 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Techanv AI — emerald brand family (see design/DESIGN.md)
         color: {
-          1: "#AC6AFF",
-          2: "#FFC876",
-          3: "#FF776F",
-          4: "#7ADB78",
-          5: "#858DFF",
-          6: "#FF98E2",
+          1: "#3ECF8E", // emerald — primary brand / active / secure signal
+          2: "#4FD1C5", // info teal
+          3: "#FF6B6B", // danger coral
+          4: "#2BD480", // green link
+          5: "#34D399", // emerald variant
+          6: "#00C573", // deep green
         },
         stroke: {
-          1: "#26242C",
+          1: "#232927",
         },
+        // Dark, near-black with faint green-cool undertone
         n: {
-          1: "#FFFFFF",
-          2: "#CAC6DD",
-          3: "#ADA8C3",
-          4: "#757185",
-          5: "#3F3A52",
-          6: "#252134",
-          7: "#15131D",
-          8: "#0E0C15",
-          9: "#474060",
-          10: "#43435C",
-          11: "#1B1B2E",
-          12: "#2E2A41",
+          1: "#F2F5F4", // primary text (off-white)
+          2: "#B7C0BC", // secondary text
+          3: "#7C8884", // muted text
+          4: "#6B7670", // quaternary text
+          5: "#2F3733", // border-strong
+          6: "#232927", // border
+          7: "#151917", // surface
+          8: "#0D0F0E", // canvas / page bg
+          9: "#1B211E", // elevated surface
+          10: "#1B211E", // elevated (hero bar)
+          11: "#121615", // deep panel
+          12: "#1F2623", // panel alt
           13: "#6C7275",
         },
       },
       fontFamily: {
-        sans: ["var(--font-sora)", ...fontFamily.sans],
+        sans: ["var(--font-sans)", ...fontFamily.sans],
         code: "var(--font-code)",
         grotesk: "var(--font-grotesk)",
       },
@@ -69,7 +71,7 @@ export default {
       backgroundImage: {
         "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",
         "conic-gradient":
-          "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
+          "conic-gradient(from 225deg, #3ECF8E, #2BD480, #4FD1C5, #00C573, #3ECF8E)",
       },
     },
   },

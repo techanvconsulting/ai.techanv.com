@@ -22,9 +22,9 @@ const Hero = () => {
      <div className="container relative" ref={parallaxRef}>
        <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
          <h1 className="h1 mb-6">
-           Power Your Website with&nbsp;AI&nbsp;by {` `}
+           AI for your website.&nbsp;{` `}
            <span className="inline-block relative">
-             TechAnv !{" "}
+             Open. Secure. Transparent.{" "}
              <img
                src={curve}
                className="absolute top-full left-0 w-full xl:-mt-2"
@@ -35,10 +35,12 @@ const Hero = () => {
            </span>
          </h1>
          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-           Transform your website with cutting-edge AI integration. Enhanced user experience, intelligent interactions, and personalized content - elevate your web presence.
+           Techanv AI is the open-source platform for adding intelligent
+           agents, content generation, and analytics to any site — self-hosted,
+           security-first, and live in under 30&nbsp;minutes.
          </p>
-         <Button href="/demo" white>
-           Try AI Integration
+         <Button href="#signup" white>
+           Deploy your agent
          </Button>
        </div>
        <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">

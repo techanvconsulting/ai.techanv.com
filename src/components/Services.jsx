@@ -1,7 +1,7 @@
 import Section from "./Section";
 import Heading from "./Heading";
 import { service1, service2, service3, check } from "../assets";
-import { brainwaveServices, brainwaveServicesIcons } from "../constants";
+import { techanvServicesIcons } from "../constants";
 import {
  PhotoChatMessage,
  Gradient,
@@ -88,7 +88,7 @@ const Services = () => {
                </p>
 
                <ul className="flex items-center justify-between">
-                 {brainwaveServicesIcons.map((item, index) => (
+                 {techanvServicesIcons.map((item, index) => (
                    <li
                      key={index}
                      className={`rounded-2xl flex items-center justify-center ${
