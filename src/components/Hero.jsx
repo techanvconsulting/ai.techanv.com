@@ -45,7 +45,7 @@ const Hero = () => {
            agents, content generation, and analytics to any site — self-hosted,
            security-first, and live in under 30&nbsp;minutes.
          </p>
-         <Button href="#signup" white>
+         <Button href="#pricing" white>
            Deploy your agent
          </Button>
        </div>

@@ -41,9 +41,11 @@ const Pricing = () => {
         <div className="flex justify-center mt-10">
           <a
             className="text-xs font-code font-bold tracking-wider uppercase border-b"
-            href="/pricing"
+            href="https://techanv.com"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            See the full details
+            Talk to us about Enterprise
           </a>
         </div>
       </div>

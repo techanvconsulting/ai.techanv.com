@@ -65,7 +65,7 @@ export const navigation = [
   {
     id: "4",
     title: "Start free",
-    url: "#signup",
+    url: "#pricing",
     onlyMobile: true,
   },
   {
@@ -74,6 +74,26 @@ export const navigation = [
     url: "https://techanv.com",
     onlyMobile: true,
   },
+];
+
+// Full AI capability coverage (researched 2026 landscape).
+export const aiCapabilities = [
+  { id: "0", title: "Conversational agents", text: "Always-on chat that answers, qualifies, and resolves — grounded in your content." },
+  { id: "1", title: "Voice agents", text: "Natural-speech phone and on-site voice assistants for live conversations." },
+  { id: "2", title: "RAG & vector search", text: "Hybrid semantic + keyword retrieval over your docs for accurate, citable answers." },
+  { id: "3", title: "Content generation", text: "On-brand copy, SEO metadata, and product descriptions at scale." },
+  { id: "4", title: "Personalization", text: "Smart Traffic routes each visitor to the variant most likely to convert." },
+  { id: "5", title: "Predictive analytics", text: "Forecast intent, churn, and conversion to optimize funnels proactively." },
+  { id: "6", title: "Multi-channel deploy", text: "One agent layer across web, chat, voice, WhatsApp, Slack, and Telegram." },
+  { id: "7", title: "API, SDK & widgets", text: "Developer-first endpoints and drop-in components for any site." },
+  { id: "8", title: "Agentic automation", text: "Agents that act: fill forms, complete checkouts, and run multi-step tasks." },
+  { id: "9", title: "Recommendation engine", text: "Personalized product and content recommendations that drive discovery." },
+  { id: "10", title: "Document AI & OCR", text: "Turn PDFs, scans, and forms into structured data and knowledge." },
+  { id: "11", title: "Sentiment & intent", text: "Read tone and purchase intent to route, escalate, and adapt responses." },
+  { id: "12", title: "Multilingual translation", text: "Localize content and conversations across 100+ languages in real time." },
+  { id: "13", title: "Image & vision AI", text: "Generate product imagery and power visual, search-by-photo discovery." },
+  { id: "14", title: "Workflow automation", text: "No-code builder to chain agents with APIs and business systems." },
+  { id: "15", title: "Fraud & security AI", text: "Behavioral anomaly detection flags fraud and bot traffic in real time." },
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
